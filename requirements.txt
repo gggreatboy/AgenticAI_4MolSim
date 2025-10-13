@@ -1,0 +1,24 @@
+# Core LangChain packages
+langchain
+langchain-community
+langchain-core
+
+## LangGraph packages
+langgraph
+langgraph_supervisor
+
+# Ollama integration (official client + LangChain interface)
+ollama
+langchain-ollama
+langchain-openai
+langchain-experimental
+
+
+## Utility tools
+dotenv
+
+
+## Agent 1 specific packages
+foyer
+simtk
+lark
