@@ -3,7 +3,7 @@
 
 ## Create conda enviroment and activate it
 #conda create --prefix /groups/ycolon/group-envs/agentic-tutorials python=3.10.13
-conda activate /groups/ycolon/group-envs/agentic-tutorials
+#conda activate /groups/ycolon/group-envs/agentic-tutorials
 
 
 ### Download and isntall Ollama (no-root). Skip this tep if ollama is installed
