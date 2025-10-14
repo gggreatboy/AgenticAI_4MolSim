@@ -6,7 +6,15 @@ We provide a conda enviroment that you can activate with the following command:
 conda activate /groups/ycolon/group-envs/agentic-tutorials
 ```
 
-Alternatively, run the `install_from_scratch.sh` file. Make desired changes to this installation. Users have the option to just installed Ollama running the `install_ollama.sh` script. The enviroment variable called `OLLAMA_MODELS` defines the path where the model's weights will be stored. Make relevant changes considering models are around ~15 GB. 
+Alternatively, run the `install_from_scratch.sh` file. Make desired changes to this installation. Users have the option to just install Ollama running the `install_ollama.sh` script. The enviroment variable called `OLLAMA_MODELS` defines the path where the model's weights will be stored. Make relevant changes considering models are around ~15 GB. 
+
+### IMPORTANT Details
+1. If conda envirment is not available when opening the notebook, load the conda enviroment before activating the tunnel.
+2. Defining enviroment variables directly form the `install_ollama.sh` script may cause some issues. Avoid them by adding variables to your .bashrc script. 
+3. If using Ollama you should connect to a GPU.
+4. If Using OpenAI API, make a copy of the `.env_sample` file, call it `.env` and paste your API key in the `OPENAI_API_KEY` varaible. 
+
+
 
 **MAKE SURE OLLAMA IS INSTALLED AND WORKING**
 Note: Ollama is being used to integrate open-source LLMs, but if you have API keys for private models you can add them to the '.env' file. For Ollama, be sure to run `ollama serve` in an individual terminal so it can be used with LangChain workflows. Once this command is running, on a new terminal run the command `ollama pull model_name`, where model_name is one of the available open-source models. we currently recommend `gpt-oss:20b` or `qwen3:14b`. List of availale models is here: https://ollama.com/search
