@@ -8,8 +8,6 @@ bond_style harmonic
 angle_style harmonic
 dihedral_style opls
 
-
-
 # ----------------- Atom Definition Section -----------------
 read_data "ethanol.data"
 
@@ -33,7 +31,6 @@ velocity   all create 298.0 097865 dist gaussian
 
 ## Fix commands
 fix 1 all npt temp 298.0 298.0 100 iso 1.0 1.0 1000.0
-run 10000
 
 # Define Dumping
 #dump 1 all xyz 1000 test.xyz
